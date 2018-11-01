@@ -17,17 +17,40 @@
             android:textSize="22dp"/>
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
 
 
-        <LinearLayout
+        <RadioGroup
+            android:id="@+id/radioGroup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_marginLeft="120px"
+            android:orientation="horizontal"
+            android:textAlignment="center">
 
 
+            <RadioButton
+                android:id="@+id/radioCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text=" Customer" />
 
-        </LinearLayout>
+            <RadioButton
+                android:id="@+id/radioCsr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+
+                android:text="CSR" />
+
+        </RadioGroup>
+
+    </LinearLayout>
 
 
         <LinearLayout
@@ -71,7 +94,6 @@
                 android:ems="10" />
         </LinearLayout>
 
-
         <Button
             android:id="@+id/login"
             android:layout_width="match_parent"
@@ -79,4 +101,24 @@
             android:text="Login" />
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/CustomerSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Customer Signup" />
+
+        <Button
+            android:id="@+id/CSRbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CSR Signup" />
+    </LinearLayout>
 </LinearLayout>

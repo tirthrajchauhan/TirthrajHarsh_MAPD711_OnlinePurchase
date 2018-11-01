@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".editOrderActivity"
+    tools:context=".NewShoesActivity"
     android:orientation="vertical">
     <TextView
         android:id="@+id/textView1"
         android:layout_width="match_parent"
         android:layout_height="42dp"
         android:gravity="center"
-        android:text="Edit Order"
+        android:text="New Shoes"
         android:textSize="22dp"/>
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,7 +19,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:text="Customer name:"
+            android:text="Shoe Name"
             android:layout_width="145dp"
             android:layout_height="wrap_content"
             android:id="@+id/txtViewName"
@@ -29,50 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:enabled="false"
-            android:inputType="textPersonName"
-            android:id="@+id/txtCustomerName"
-            android:textSize="17sp"/>
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:text="Item name:"
-            android:layout_width="145dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/txtViewItemName"
-            android:textSize="17sp"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:enabled="false"
-            android:inputType="textPersonName"
-            android:id="@+id/txtItemName"
-            android:textSize="17sp"/>
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:text="Order Date"
-            android:layout_width="145dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/txtViewOrderDate"
-            android:textSize="17sp"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:enabled="false"
-            android:id="@+id/txtOrderDate"
+            android:id="@+id/editTextShoeName"
             android:textSize="17sp"/>
     </LinearLayout>
     <LinearLayout
@@ -80,41 +37,63 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
-            android:text="Quantity"
+            android:text="Category"
             android:layout_width="145dp"
             android:layout_height="wrap_content"
-            android:id="@+id/txtViewQuantity"
-            android:textSize="17sp"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:enabled="false"
-            android:id="@+id/txtQuantity"
-            android:textSize="17sp"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:text="Status"
-            android:layout_width="145dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/txtViewStatus"
+            android:id="@+id/txtViewCategory"
             android:textSize="17sp"/>
 
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/spinnerStatusEditOrder"/>
-    </LinearLayout>
+            android:id="@+id/spinnerShoetype">
+        </Spinner>
 
-    <Button
-        android:id="@+id/orderPizza"
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Update Shoes" />
+        android:orientation="horizontal">
+        <TextView
+            android:text="Size"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtViewSize"
+            android:textSize="17sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="false"
+            android:id="@+id/editTextSize"
+            android:textSize="17sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Price"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtViewPrice"
+            android:textSize="17sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:enabled="false"
+            android:id="@+id/editTextPrice"
+            android:textSize="17sp"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/AddShoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Shoes" />
 </LinearLayout>
 

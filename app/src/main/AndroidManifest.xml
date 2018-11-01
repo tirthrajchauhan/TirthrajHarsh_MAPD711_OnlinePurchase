@@ -19,7 +19,10 @@
         <activity android:name=".SignupActivity" />
         <activity android:name=".PlaceOrderActivity" />
         <activity android:name=".CSRSignupActivity" />
-        <activity android:name=".editOrderActivity"></activity>
+        <activity android:name=".editOrderActivity" />
+        <activity android:name=".NewShoesActivity" />
+        <activity android:name=".CSRwelcomeActivity" />
+        <activity android:name=".userWelcomeActivity"></activity>
     </application>
 
 </manifest>
