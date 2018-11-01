@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".PlaceOrderActivity" />
+        <activity android:name=".CSRSignupActivity" />
+        <activity android:name=".editOrderActivity"></activity>
     </application>
 
 </manifest>
