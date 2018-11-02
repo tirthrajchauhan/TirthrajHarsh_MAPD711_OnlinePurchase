@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">TirthrajHarsh_MAPD711_OnlinePurchase</string>
+
+
+    <string name="shoes_prompt">Choose a category</string>
+
+    <string-array name="shoes_arrays">
+        <item>Men</item>
+        <item>Women</item>
+        <item>Kids</item>
+    </string-array>
+
 </resources>

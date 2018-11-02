@@ -46,7 +46,9 @@
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/spinnerShoetype">
+            android:id="@+id/spinnerShoetype"
+            android:entries="@array/shoes_arrays"
+            android:prompt="@string/shoes_prompt">
         </Spinner>
 
     </LinearLayout>
@@ -65,7 +67,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:enabled="false"
             android:id="@+id/editTextSize"
             android:textSize="17sp"/>
     </LinearLayout>
@@ -84,7 +85,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:enabled="false"
             android:id="@+id/editTextPrice"
             android:textSize="17sp"/>
     </LinearLayout>
@@ -94,6 +94,7 @@
         android:id="@+id/AddShoes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add Shoes" />
+        android:text="Add Shoes"
+        android:onClick="save"/>
 </LinearLayout>
 
