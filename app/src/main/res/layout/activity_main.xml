@@ -38,14 +38,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                android:text=" Customer" />
+                android:text=" Customer"
+                android:onClick="rbClick"/>
 
             <RadioButton
                 android:id="@+id/radioCsr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30px"
-
+                android:onClick="rbClick"
                 android:text="CSR" />
 
         </RadioGroup>
@@ -113,6 +114,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="signUpCustomer"
             android:text="Customer Signup" />
 
         <Button
@@ -120,6 +122,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="signUpCsr"
             android:text="CSR Signup" />
     </LinearLayout>
 </LinearLayout>

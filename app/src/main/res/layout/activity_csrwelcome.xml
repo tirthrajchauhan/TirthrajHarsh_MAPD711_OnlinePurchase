@@ -30,7 +30,7 @@
             android:text="Dear" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textViewCsrName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -56,16 +56,18 @@
         android:orientation="horizontal">
 
         <Button
-            android:text="Recent Orders"
+            android:id="@+id/btnOrders"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btnOrders" />
+            android:onClick="clickOrders"
+            android:text="Recent Orders" />
 
         <Button
-            android:text="Add new Shoes"
+            android:id="@+id/btnSaveShoe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btnSaveShoe" />
+            android:onClick="clickShoes"
+            android:text="Add new Shoes" />
 
     </LinearLayout>
 
