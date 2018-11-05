@@ -19,7 +19,7 @@ public class userWelcomeActivity extends AppCompatActivity {
         userPref = getSharedPreferences("userInfo", Context.MODE_PRIVATE);
         String fullName = userPref.getString("username", "");
 
-        TextView tfUserName = findViewById(R.id.textViewUsername);
+        TextView tfUserName = findViewById(R.id.textView2);
         tfUserName.setText(fullName);
     }
 

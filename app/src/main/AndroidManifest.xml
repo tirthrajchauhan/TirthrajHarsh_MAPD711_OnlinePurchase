@@ -24,7 +24,7 @@
         <activity android:name=".CSRwelcomeActivity" />
         <activity android:name=".userWelcomeActivity" />
         <activity android:name=".OrdersActivity" />
-        <activity android:name=".ShoesListActivity"></activity>
+        <activity android:name=".ShoesListActivity" />
     </application>
 
 </manifest>

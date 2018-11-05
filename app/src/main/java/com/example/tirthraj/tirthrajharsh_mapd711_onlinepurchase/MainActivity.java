@@ -41,13 +41,14 @@ protected void onCreate(Bundle savedInstanceState) {
           final EditText etPwd = (EditText) findViewById(R.id.editTextPassword);
           String fullName = etUsername.getText().toString();
           String password = etPwd.getText().toString();
+
           SharedPreferences sharedPref = getSharedPreferences("userInfo", Context.MODE_PRIVATE);
           SharedPreferences.Editor editor = sharedPref.edit();
 
           RadioButton rbSelected = findViewById(loginType);
 
       if (rbSelected.getText().toString().contains("Customer")) {
-          Customer customer = customerDAO.login(fullName, password);
+         Customer customer = customerDAO.login(fullName, password);
           if (customer != null && customer.getCustomerId() != null) {
               editor.putString("username", customer.getFirstName());
               editor.putString("userid", customer.getCustomerId().toString());
@@ -61,7 +62,9 @@ protected void onCreate(Bundle savedInstanceState) {
               etPwd.setText("");
               etUsername.requestFocus();
           }
-
+         // Toast.makeText(MainActivity.this, "Customer Selected", Toast.LENGTH_LONG).show();
+         // Intent intent = new Intent(MainActivity.this, userWelcomeActivity.class);
+         // startActivity(intent);
       } else if (rbSelected.getText().toString().contains("CSR")) {
           Csr csr = csrDAO.login(fullName, password);
           if (csr != null && csr.getEmployeeId() != null) {

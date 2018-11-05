@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".CSRSignupActivity"
     android:orientation="vertical"
-    android:background="@color/colorbg">
+    android:background="@color/colorBackground">
 
 
     <TextView
