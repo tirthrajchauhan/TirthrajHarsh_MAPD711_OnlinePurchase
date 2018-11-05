@@ -23,7 +23,8 @@
         <activity android:name=".NewShoesActivity" />
         <activity android:name=".CSRwelcomeActivity" />
         <activity android:name=".userWelcomeActivity" />
-        <activity android:name=".OrdersActivity"></activity>
+        <activity android:name=".OrdersActivity" />
+        <activity android:name=".ShoesListActivity"></activity>
     </application>
 
 </manifest>

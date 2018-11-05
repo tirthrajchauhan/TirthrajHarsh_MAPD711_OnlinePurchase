@@ -3,6 +3,7 @@
 
 
     <string name="shoes_prompt">Choose a category</string>
+    <string name="add">Add</string>
 
     <string-array name="shoes_arrays">
         <item>Men</item>
@@ -10,4 +11,8 @@
         <item>Kids</item>
     </string-array>
 
+    <string-array name="status_array">
+        <item>In-process</item>
+        <item>Delivered</item>
+    </string-array>
 </resources>
